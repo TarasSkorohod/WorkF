@@ -4,6 +4,10 @@ import imagesP from "@/public/imagePrivatB.png"
 import Modal from "react-modal";
 import AudioPlayer from "@/components/onlineService/AudioPlayer";
 import Card from "@/components/onlineService/Card";
+import YourSVGIcon from "@/components/onlineService/YourSVGIcon";
+import TimeTraveler from "@/components/onlineService/AudioPlayer";
+import AudiPlayer from "@/components/onlineService/AudioPlayer";
+import CustomPlayer from "@/components/onlineService/AudioPlayer";
 
 export type PHOTO = {
     image: string;
@@ -31,9 +35,9 @@ const brandData: PHOTO[] = [
 
 ];
 const cardsData = [
-    { name: 'Ім\'я 1', service: 'Послуга 1', rating: 5 },
-    { name: 'Ім\'я 2', service: 'Послуга 2', rating: 4 },
-    { name: 'Ім\'я 3', service: 'Послуга 3', rating: 3 },
+    {  service: 'Послуга 1', rating: 5 },
+    {  service: 'Послуга 2', rating: 4 },
+    {  service: 'Послуга 3', rating: 3 },
 ];
 const OnlineService = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -72,7 +76,7 @@ const OnlineService = () => {
 
                 </div>
                 <div className="pt-[70px]">
-                    <AudioPlayer  />
+                    <AudioPlayer/>
                 </div>
 
                 <div className=" flex items-center justify-center h-full">
@@ -88,7 +92,7 @@ const OnlineService = () => {
                         {brandData.map((photo, index) => (
                             <div
                                 key={index}
-                                className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
+                                className="group relative aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7 cursor-pointer"
                                 onClick={() => handleImageClick(photo.image)}
                             >
                                 <Image
@@ -96,13 +100,17 @@ const OnlineService = () => {
                                     alt={`Image ${index + 1}`}
                                     width={285}
                                     height={160}
-                                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                    className="h-full w-full object-cover object-center transition-opacity duration-300 group-hover:opacity-75"
                                 />
+                                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
 
+                                {/* SVG іконка */}
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <YourSVGIcon />
+                                </div>
                             </div>
 
                         ))}
-
                     </div>
                     <p className=" border-b border-stroke  p-4 text-right bottom-2 right-2 text-base ">16 грудня 2023, 15:31:44</p>
                     <div>

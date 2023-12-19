@@ -54,6 +54,9 @@ module.exports = {
       success2:"#028891",
       dangerText: "#FFFFFF",
       warning: "#FFA70B",
+      borderL: "#FFFFFF",
+      textColor: "#333333",
+
     },
     screens: {
       "2xsm": "375px",

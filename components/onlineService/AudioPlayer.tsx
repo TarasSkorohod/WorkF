@@ -6,8 +6,6 @@ const AudioPlayer = () => {
                     <source />
                 </audio>
             </div>
-
-
     );
 };
 
