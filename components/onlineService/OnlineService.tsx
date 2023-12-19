@@ -62,7 +62,7 @@ const OnlineService = () => {
                 <div className="p-[88px] flex items-center justify-center h-full">
                     <div >
                         <div className=" border-b border-stroke pb-10  flex flex-col items-center">
-                            <h1 className="text-[29px] font-bold text-bb mb-2">ПриватБанк. Обслуговування клієнтів</h1>
+                            <h1 className="text-[29px] dark:text-white font-bold text-bb mb-2">ПриватБанк. Обслуговування клієнтів</h1>
                             <span className="self-end">14 грудня 2023</span>
                         </div>
                         <p className="mt-2.5 mb-[22px]">(Саммары) Одного разу я вирішив відвідати новий ресторан у місті, який був відомий своєю сучасною кухнею та затишною атмосферою. З почуттям цікавості і голоду, я разом з друзями прийшов у цей заклад.</p>
@@ -158,18 +158,17 @@ const OnlineService = () => {
                         },
                     }}
                 >
-                    <div>
-                        {selectedImage && (
-                            <Image
-                                layout="responsive"
-                                width={899}
-                                height={506}
-                                src={selectedImage}
-                                alt="Enlarged Image"
-                            />
-                        )}
-                    </div>
+                    {selectedImage && (
+                        <Image
+                            layout="responsive"
+                            width={899}
+                            height={506}
+                            src={selectedImage}
+                            alt="Enlarged Image"
+                        />
+                    )}
                 </Modal>
+
 
 
             </div>
