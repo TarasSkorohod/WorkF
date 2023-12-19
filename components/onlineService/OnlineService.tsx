@@ -158,7 +158,7 @@ const OnlineService = () => {
                         },
                     }}
                 >
-                    <React.Fragment>
+                    <>
                         {selectedImage && (
                             <Image
                                 layout="responsive"
@@ -168,7 +168,8 @@ const OnlineService = () => {
                                 alt="Enlarged Image"
                             />
                         )}
-                    </React.Fragment>
+                    </>
+
                 </Modal>
 
             </div>
