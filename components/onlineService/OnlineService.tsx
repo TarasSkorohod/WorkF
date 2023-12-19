@@ -3,8 +3,6 @@ import Image from "next/image";
 import {useState} from "react";
 
 import imagesP from "@/public/imagePrivatB.png"
-import {BRAND} from "@/types/brand";
-import ImageModal from "@/components/onlineService/ImageModal";
 import Modal from "react-modal";
 import AudioPlayer from "@/components/onlineService/AudioPlayer";
 import Card from "@/components/onlineService/Card";
