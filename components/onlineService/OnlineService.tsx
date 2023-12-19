@@ -107,7 +107,7 @@ const OnlineService = () => {
                     <p className=" border-b border-stroke  p-4 text-right bottom-2 right-2 text-base ">16 грудня 2023, 15:31:44</p>
                     <div>
                         <div className="p-10 flex flex-col">
-                            <h1 className="text-[16px] font-bold text-bb mb-2 text-left">
+                            <h1 className="dark:text-white text-[16px] font-bold text-bb mb-2 text-left">
                                 Оцініть, будь ласка, кейс, за тьрома параметрами:
                             </h1>
                         </div>
@@ -122,7 +122,7 @@ const OnlineService = () => {
                             <button className=" w-[285px] h-[56px] bg-success2 text-white px-4 py-2 rounded-md mr-4">
                                 Зберегти
                             </button>
-                            <button className="bg-white h-[56px] border border-bodydark3 border-solid text-green-500 px-4 py-2 rounded-md">
+                            <button className=" dark:border-strokedark dark:bg-primary bg-white h-[56px] border border-bodydark3 border-solid text-green-500 px-4 py-2 rounded-md">
                                 Перейти до наступного
                             </button>
 
