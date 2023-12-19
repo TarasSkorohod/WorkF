@@ -158,7 +158,7 @@ const OnlineService = () => {
                         },
                     }}
                 >
-                    <>
+                    <div>
                         {selectedImage && (
                             <Image
                                 layout="responsive"
@@ -168,9 +168,9 @@ const OnlineService = () => {
                                 alt="Enlarged Image"
                             />
                         )}
-                    </>
-
+                    </div>
                 </Modal>
+
 
             </div>
 
