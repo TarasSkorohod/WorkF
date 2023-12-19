@@ -150,8 +150,8 @@ const OnlineService = () => {
                         content: {
                             width: '80%',
                             height: '80%',
-                            maxWidth: '900px', // Adjust the maximum width as needed
-                            maxHeight: '506px', // Adjust the maximum height as needed
+                            maxWidth: '900px',
+                            maxHeight: '506px',
                             position: 'relative',
                             padding: 0,
                             border: 'none',
@@ -159,7 +159,7 @@ const OnlineService = () => {
                         },
                     }}
                 >
-                    <div>
+                    <React.Fragment>
                         {selectedImage && (
                             <Image
                                 layout="responsive"
@@ -169,9 +169,9 @@ const OnlineService = () => {
                                 alt="Enlarged Image"
                             />
                         )}
-                    </div>
-
+                    </React.Fragment>
                 </Modal>
+
             </div>
 
 
