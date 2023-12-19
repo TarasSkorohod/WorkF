@@ -135,13 +135,7 @@ const OnlineService = () => {
                             </button>
 
                         </div>
-
-
-
-
                     </div>
-
-
                 </div>
                 <Modal
                     isOpen={modalIsOpen}
@@ -167,15 +161,18 @@ const OnlineService = () => {
                     }}
                 >
                     {selectedImage && (
-                        <Image
-                            layout="responsive"
-                            width={899}
-                            height={506}
-                            src={selectedImage}
-                            alt="Enlarged Image"
-                        />
+                        <div>
+                            <Image
+                                layout="responsive"
+                                width={899}
+                                height={506}
+                                src={selectedImage}
+                                alt="Enlarged Image"
+                            />
+                        </div>
                     )}
                 </Modal>
+
 
 
 
