@@ -159,15 +159,18 @@ const OnlineService = () => {
                         },
                     }}
                 >
-                    {selectedImage && (
-                        <Image
-                            layout="responsive"
-                            width={899}
-                            height={506}
-                            src={selectedImage}
-                            alt="Enlarged Image"
-                        />
-                    )}
+                    <div>
+                        {selectedImage && (
+                            <Image
+                                layout="responsive"
+                                width={899}
+                                height={506}
+                                src={selectedImage}
+                                alt="Enlarged Image"
+                            />
+                        )}
+                    </div>
+
                 </Modal>
             </div>
 
