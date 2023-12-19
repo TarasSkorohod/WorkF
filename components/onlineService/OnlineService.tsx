@@ -1,7 +1,5 @@
 import Image from "next/image";
-
-import {useState} from "react";
-
+import React, {useState} from "react";
 import imagesP from "@/public/imagePrivatB.png"
 import Modal from "react-modal";
 import AudioPlayer from "@/components/onlineService/AudioPlayer";
@@ -32,15 +30,16 @@ const brandData: PHOTO[] = [
     },
 
 ];
+const cardsData = [
+    { name: 'Ім\'я 1', service: 'Послуга 1', rating: 5 },
+    { name: 'Ім\'я 2', service: 'Послуга 2', rating: 4 },
+    { name: 'Ім\'я 3', service: 'Послуга 3', rating: 3 },
+];
 const OnlineService = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-    const cardsData = [
-        { name: 'Ім\'я 1', service: 'Послуга 1', rating: 5 },
-        { name: 'Ім\'я 2', service: 'Послуга 2', rating: 4 },
-        { name: 'Ім\'я 3', service: 'Послуга 3', rating: 3 },
-    ];
+
     const handleImageClick = (imageSrc: string) => {
         setSelectedImage(imageSrc);
         setModalIsOpen(true);
