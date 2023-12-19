@@ -59,7 +59,7 @@ const TableOne = () => {
       <div className="flex flex-col">
       </div>
       <div className="flex flex-col">
-        <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
+        <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-boxdark sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
               <Dropdown title="Назва" />
           </div>
