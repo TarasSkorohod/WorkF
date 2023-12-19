@@ -62,7 +62,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               sidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
-        <div className="flex px-10 py-6 lg:py-6.6 bg-bb w-full"> {/* Set width to w-full */}
+        <div className=" flex px-10 py-6 lg:py-6.6 bg-bb dark:bg-black w-full"> {/* Set width to w-full */}
           <div className="flex-grow  w-full">
             <Link href="/">
               <Image
