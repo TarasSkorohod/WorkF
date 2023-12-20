@@ -8,6 +8,7 @@ import YourSVGIcon from "@/components/onlineService/YourSVGIcon";
 import TimeTraveler from "@/components/onlineService/AudioPlayer";
 import AudiPlayer from "@/components/onlineService/AudioPlayer";
 import CustomPlayer from "@/components/onlineService/AudioPlayer";
+import WaveSurferComp from "@/components/Waveform/waveSurfer";
 
 export type PHOTO = {
     image: string;
@@ -64,20 +65,30 @@ const OnlineService = () => {
 
             <div className="px-4 items-center justify-center min-h-screen">
                 <div className="p-[88px] flex items-center justify-center h-full">
-                    <div >
+                    <div>
                         <div className=" border-b border-stroke pb-10  flex flex-col items-center">
-                            <h1 className="text-[29px] dark:text-white font-bold text-bb mb-2">ПриватБанк. Обслуговування клієнтів</h1>
+                            <h1 className="text-[29px] dark:text-white font-bold text-bb mb-2">ПриватБанк.
+                                Обслуговування клієнтів</h1>
                             <span className="self-end">14 грудня 2023</span>
                         </div>
-                        <p className="mt-2.5 mb-[22px]">(Саммары) Одного разу я вирішив відвідати новий ресторан у місті, який був відомий своєю сучасною кухнею та затишною атмосферою. З почуттям цікавості і голоду, я разом з друзями прийшов у цей заклад.</p>
+                        <p className="mt-2.5 mb-[22px]">(Саммары) Одного разу я вирішив відвідати новий ресторан у
+                            місті, який був відомий своєю сучасною кухнею та затишною атмосферою. З почуттям цікавості і
+                            голоду, я разом з друзями прийшов у цей заклад.</p>
 
-                        <p>Вже від початку ми помітили, що обслуговування залишає бажати кращого. Офіціанти не були дуже уважними і виявилося складно привернути їхню увагу. Замовлення ми отримали досить швидко, але наше замовлення було неправильним. Одна страва виявилася холодною, інша — не тієї, яку ми замовляли.</p>
+                        <p>Вже від початку ми помітили, що обслуговування залишає бажати кращого. Офіціанти не були дуже
+                            уважними і виявилося складно привернути їхню увагу. Замовлення ми отримали досить швидко,
+                            але наше замовлення було неправильним. Одна страва виявилася холодною, інша — не тієї, яку
+                            ми замовляли.</p>
                     </div>
 
                 </div>
-                <div className="pt-[70px]">
-                    <AudioPlayer/>
+                <div className="pt-[70px] mb-[40px] max-w-[900px] mx-auto">
+                    <WaveSurferComp/>
+                    <p className=" p-4 text-right bottom-2 right-2 text-base ">16 грудня 2023,
+                        15:31:44</p>
+
                 </div>
+
 
                 <div className=" flex items-center justify-center h-full">
                     <Image
@@ -88,7 +99,8 @@ const OnlineService = () => {
                     />
                 </div>
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                    <div
+                        className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         {brandData.map((photo, index) => (
                             <div
                                 key={index}
@@ -102,17 +114,19 @@ const OnlineService = () => {
                                     height={160}
                                     className="h-full w-full object-cover object-center transition-opacity duration-300 group-hover:opacity-75"
                                 />
-                                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                                <div
+                                    className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
 
-                                {/* SVG іконка */}
-                                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <YourSVGIcon />
+                                <div
+                                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <YourSVGIcon/>
                                 </div>
                             </div>
 
                         ))}
                     </div>
-                    <p className=" border-b border-stroke  p-4 text-right bottom-2 right-2 text-base ">16 грудня 2023, 15:31:44</p>
+                    <p className=" border-b border-stroke  p-4 text-right bottom-2 right-2 text-base ">16 грудня 2023,
+                        15:31:44</p>
                     <div>
                         <div className="p-10 flex flex-col">
                             <h1 className="dark:text-white text-[16px] font-bold text-bb mb-2 text-left">
@@ -120,17 +134,18 @@ const OnlineService = () => {
                             </h1>
                         </div>
 
-                            <div className="flex justify-around">
-                                {cardsData.map((data, index) => (
-                                    <Card key={index} {...data} />
-                                ))}
+                        <div className="flex justify-around">
+                            {cardsData.map((data, index) => (
+                                <Card key={index} {...data} />
+                            ))}
 
-                            </div>
+                        </div>
                         <div className="p-[40px]">
                             <button className=" w-[285px] h-[56px] bg-success2 text-white px-4 py-2 rounded-md mr-4">
                                 Зберегти
                             </button>
-                            <button className=" dark:border-strokedark dark:bg-primary bg-white h-[56px] border border-bodydark3 border-solid text-green-500 px-4 py-2 rounded-md">
+                            <button
+                                className=" dark:border-strokedark dark:bg-primary bg-white h-[56px] border border-bodydark3 border-solid text-green-500 px-4 py-2 rounded-md">
                                 Перейти до наступного
                             </button>
 
@@ -172,8 +187,6 @@ const OnlineService = () => {
                         </div>
                     )}
                 </Modal>
-
-
 
 
             </div>
